@@ -8,77 +8,90 @@
 </head>
 <body>
 
+    <!-- Header -->
     <header>
        <h3 class="header-title">JOKERS</h3>
        <ul>
-        <li>Location</li>
-        <li>Gallery</li>
-        <li>Upcoming</li>
-        <li>Players</li>
+        <li><a href="#location">Location</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#upcoming">Upcoming</a></li>
+        <li><a href="#players">Players</a></li>
        </ul>
     </header>
 
-    <section class="intro" style="background-image: url('https://i.media.fi/incoming/v3baut/5567398.jpg/alternates/FREE_1440/5567398.jpg');"">
+    <!-- Intro Section -->
+    <section class="intro" id="responsive-intro">
         <h1 class="intro-title">JOKERS: Best team of Helsinki</h1>
+        <div class="intro-sub">
         <h2>Mina, Me, Jokerit</h2>
-        <button>About us</button>
+        <button><a href="https://www.jokerit.fi" target="blank_">About us</a></button>
+        </div>
     </section>
 
-    <section class= "location">
+    <!-- Stadium Location -->
+    <section class= "location" id="location">
         <h2>Stadium Location</h2>
         <a href="#" class= "top-link">Top</a>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.4838574422834!2d24.91993657758537!3d60.18927507504217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920a2636f2e6c3%3A0xa1ae410978cdf966!2sHelsinki%20Ice%20Hall!5e0!3m2!1sen!2ses!4v1698060011250!5m2!1sen!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <p>Come over to see our games at the Helsinki Ice Hall! Easy access from center with the 2, 4, and 5 trams.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.4838574422834!2d24.91993657758537!3d60.18927507504217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920a2636f2e6c3%3A0xa1ae410978cdf966!2sHelsinki%20Ice%20Hall!5e0!3m2!1sen!2ses!4v1698141979184!5m2!1sen!2ses" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>Jokerit pelaavat jälleen Jäähallilla!</p>
     </section>
 
-    <section>
+    <!-- Gallery -->
+    <section id="gallery">
         <div class="gal-title">
-        <h2>Gallery</h2>
-        <a href="#">Top</a>
+            <h2>Gallery</h2>
+            <a href="#">Top</a>
         </div>
-            <div class="gallery">
-               <img src="/images/Jokerit-1.jpg" class="gal-img">
-               <img src="/Images/Jokerit-2.jpg" class="gal-img">
-               <img src="/Images/Jokerit-3.jpg" class="gal-img">
-               <img src="/Images/Jokerit-4.jpg" class="gal-img">
-            </div>
-    </section>
 
+        <div class="gal-top3">
+            <div><img src="./images/Jokerit-1.jpg"></div>
+            <div><img src="./Images/Jokerit-2.jpg"></div>
+            <div><img src="./Images/Jokerit-3.jpg"></div>
+        </div>
+
+        <div class="gal-bottom-img">
+            <img src="./Images/Jokerit-4.jpg">
+        </div>
+    </section>
+    
+    <!-- Upcoming Games -->
         <section>
+            <div class="games-title" id="upcoming">
             <h2>Upcoming Games</h2>
             <a href="#">Top</a>
-                </div class="upcoming">
-                <div>
+            </div>
+                <div class="upcoming">
+                <div class="game-1">
                     <h3>Jokers vs. Kiekko-Espoo 24.10</h3>
                     <img src="./Images/K-Espoo.png">
                     <p>Jokerit kohtaavat K-Espoon Helsingin Jäähallilla. Tule kannustamaan meidät voittoon!</p>
                 </div>
         
-                <div>
+                <div class="game-2">
                     <h3>IPK vs. Jokers 30.10</h3>
                     <img src="./Images/IPK.png">
                     <p>Jokerit kohtaavat IPK:n Iisalmessa. Lippuja fanikatsomoon saa Tiketin kautta.</p>
                 </div>
         
-                <div>
+                <div class="game-3">
                     <h3>K-Vantaa vs. Jokers 5.11</h3>
                     <img src="./Images/K-Vantaa.jpg">
                     <p>Lähdetään naapuriin Vantaalle kannustamaan Jokerit voittoon!</p>
                 </div>
         
-                <div>
+                <div class="game-4">
                     <h3>Jokers vs. Ketterä 8.11</h3>
                     <img src="./Images/Kettera.jpg">
                     <p>Taas koti-areenalla! Tule nauttimaan kotoisasta, riehakkaasta tunnelmasta Nordiksella! Vastassa Ketterä.</p>
                 </div>
         
-                <div>
+                <div class="game-5">
                     <h3>RoKi vs. Jokers 14.11</h3>
                     <img src="./Images/RoKi.jpg">
                     <p>Jokerit kohtaavat Pohjoisen joukkueen RoKin heidän kotiareenallaan.</p>
                 </div>
         
-                <div>
+                <div class="game-6">
                     <h3>Jokers vs. JokP 20.11</h3>
                     <img src="./Images/JokP.jpg">
                     <p>Kannustetaan Jokerit voittoon kotona.</p>
@@ -86,23 +99,27 @@
                 </div>
         </section>
 
+    <!-- Players -->
          <section>
+            <div class="players-title" id="players">
             <h2>Players</h2>
             <a href="#">Scroll To Top</a>
-                <div>
-                    <img src="./Images/Auvinen.png">
-                    <img src="./Images/Henritius.png">
-                    <img src="./Images/Haakana.png">
-                    <img src="./Images/Oksanen.png">
-                    <img src="./Images/Lemberg.png">
-                    <img src="./Images/Kalajanniska.png">
+            </div>
+                <div class="players">
+                    <div><img src="./Images/Auvinen.png"><h3>Severi Auvinen #15</h3></div>
+                    <div><img src="./Images/Henritius.png"><h3>Teemu Henritius #30</h3></div>
+                    <div><img src="./Images/Haakana.png"><h3>Santeri Haakana #14</h3></div>
+                    <div><img src="./Images/Oksanen.png"><h3>Emil Oksanen #9</h3></div>
+                    <div><img src="./Images/Lemberg.png"><h3>Leevi Lemberg #21</h3></div>
+                    <div><img src="./Images/Kalajanniska.png"><h3>Oskari Kalajanniska #32</h3>/div>
                 </div>
          </section>
 
-        <footer>
+         <!-- Footer -->
+        <footer id="responsive-footer">
             <p>Copyright 2023 Jokers Created in Helsinki</p>
             <p>Helsingin Jäähalli, Nordiksenkatu 17</p>
-            <p>+358 50 359 3490</p>
+            <p><u>+358 50 359 3490</u></p>
             <p>info@jokerit.fi</p>
         </footer>
 

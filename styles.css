@@ -4,6 +4,8 @@ body {
     text-align: center;
 }
 
+/* Header */
+
 header {
     background-color: yellow;
     color: red;
@@ -13,40 +15,67 @@ header {
 }
 
 .header-title {
-    margin-left: 40px;
+    margin-left: 5%;
+}
+
+li a {
+    text-decoration: none;
+    color: red;
 }
 
 header ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: end;
     align-items: center;
-    margin: 20px;
+    margin-right: 2%;
 }
 
 li {
-    padding: 20px;
+    padding: 8%;
 }
 
+
+/* Intro */
+
 .intro {
+    background-image:url("Jokers-mascot.jpg");
     background-size: cover;
-    height: 500px;
+    width: 100%;
+    height: 100%;
     color: white;
     text-align: center;
-    padding: 60px;
-    margin-bottom: 30px;
+    padding: 1%;
 }
 
 .intro-title {
-    font-size: 60px;
+    font-size: 350%;
     color: white;
-    padding: 10px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.intro h2 {
+    font-size: 200%;
+}
+
+.intro-sub {
+    margin-top: 15%;
+    margin-bottom: 5%;
 }
 
 button {
-    font-size: 25px;
-    padding: 5px;
+    font-size: 150%;
+    padding: 0.7%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+.intro a {
+    text-decoration: none;
+    color: red;
+}
+
+/* Location */
 
 .location {
     display: flex;
@@ -55,30 +84,108 @@ button {
 }
 
 .top-link {
-    margin-bottom: 30px; 
+    margin-bottom: 2%; 
 }
+
+/* Gallery */
 
 .gal-title {
-    margin-top: 60px;
-    margin-bottom: 50px;
+    margin-top: 4%;
+    margin-bottom: 3%;
 }
 
-.gallery {
+.gal-top3 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);	
-    grid-template-rows: repeat(2, 5vw)
-    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    margin: 0 2.5%;
 }
 
-.gal-img {
-    width: 500px;
+.gal-top3 img {
+    width: 100%;
+    height: 90%;
+}
+
+.gal-bottom-img img{
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* Upcoming Games */
+
+.games-title {
+    margin-top: 10%;
+    margin-bottom: 5%;
 }
 
 .upcoming {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 7%;
+    margin: auto;
 }
+
+.upcoming img {
+    width: 70%;
+    height: 80%;
+    margin-bottom: 5%;
+}
+
+.game-2, .game-4, .game-6 {
+margin-right: 30%;
+}
+
+.game-1, .game-3, .game-5 {
+    margin-left: 30%;
+}
+
+.upcoming p {
+    font-size: 100%;
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* Players */
+
+.players {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    background-color: red;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.players img {
+    width: 270px;
+    height: 350px;
+    padding: 10px;
+}
+
+.players-title {
+    margin-top: 100px;
+}
+
+.players h3 {
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 1px;
+    font-size: 24px;
+}
+
+/* Footer */
+
+footer {
+    background-color: yellow;
+    padding: 50px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* RESPONSIVENESS */
+
+
+
 
 
 
