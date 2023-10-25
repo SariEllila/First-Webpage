@@ -35,13 +35,16 @@ li {
     padding: 8%;
 }
 
+.hamburger {
+    display: none;
+}
+
 
 /* Intro */
 
 .intro {
     background-image:url("Jokers-mascot.jpg");
     background-size: cover;
-    width: 100%;
     height: 100%;
     color: white;
     text-align: center;
@@ -75,7 +78,14 @@ button {
     color: red;
 }
 
+.hamburger {
+    display: 
+}
+
 /* Location */
+iframe {
+    width: 90%;
+}
 
 .location {
     display: flex;
@@ -121,22 +131,13 @@ button {
 .upcoming {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 7%;
+    grid-gap: 3%;
     margin: auto;
 }
 
 .upcoming img {
-    width: 70%;
-    height: 80%;
+    width: 50%;
     margin-bottom: 5%;
-}
-
-.game-2, .game-4, .game-6 {
-margin-right: 30%;
-}
-
-.game-1, .game-3, .game-5 {
-    margin-left: 30%;
 }
 
 .upcoming p {
@@ -150,40 +151,112 @@ margin-right: 30%;
 .players {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 1em;
     background-color: red;
-    margin-top: 30px;
-    padding: 20px;
+    margin-top: 3%;
+    padding: 1%;
 }
 
 .players img {
-    width: 270px;
-    height: 350px;
-    padding: 10px;
+    width: 40%;
 }
 
 .players-title {
-    margin-top: 100px;
+    margin-top: 20%;
+    margin-bottom: 10%;
 }
 
 .players h3 {
-    font-size: 20px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-top: 1px;
-    font-size: 24px;
+    font-size: 200%;
 }
 
 /* Footer */
 
 footer {
     background-color: yellow;
-    padding: 50px;
-    font-size: 20px;
+    padding: 3%;
+    font-size: 100%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /* RESPONSIVENESS */
 
+@media all and (max-width: 600px) {
+    
+    /* HEADER */
+
+    .nav {
+        display: none;
+    }
+    
+    .hamburger {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .hamburger-content {
+        display: none;
+        position: absolute;
+        right:0;
+        z-index:1;
+      }
+
+      .hamburger-content ul {
+        flex-direction: column;
+      }
+
+      .hamburger-content ul li {
+        background-color: yellow;
+        border-bottom: 1px solid blue;
+        width:100%;
+      }
+
+      .hamburger:hover .hamburger-content {
+        display: block;
+      /* animation: popup .5s ease-in-out both; */
+      }
+      
+      .hamburger span {
+        transition: transform .5s;
+      -webkit-transition: -webkit-transform .5s;
+        display: block;
+        transform: rotate(90deg);
+      }
+      
+      .hamburger:hover span {
+        transition: transform .5s;
+      -webkit-transition: -webkit-transform .5s;
+        display: block;
+        transform: rotate(180deg);
+      }
+
+      /* UPCOMING */
+
+      .upcoming {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 3%;
+            margin: auto;
+        }
+
+        .upcoming img {
+            width: 50%;
+        }
+
+        /* PLAYERS */
+
+        .players {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        .players-title {
+        margin-top: 85%;
+        margin-bottom: 10%;
+        }
+
+}
 
 
 
